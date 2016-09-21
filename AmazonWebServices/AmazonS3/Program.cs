@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AmazonS3.Actions;
+using System;
+
 
 namespace AmazonS3
 {
@@ -10,7 +8,10 @@ namespace AmazonS3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hola");
+
+            UploadS3File upload = new UploadS3File();
+            upload.Action();
+            Console.ReadLine();
         }
     }
 }
